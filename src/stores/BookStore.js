@@ -14,6 +14,20 @@ let BookStore = writable([
 		image: '',
 		author: 'J.R.R. Tolkien',
 		read: false
+	},
+	{
+		id: 3,
+		title: 'The Hobbit',
+		image: '',
+		author: 'J.R.R. Tolkien',
+		read: false
+	},
+	{
+		id: 4,
+		title: 'The Hobbit',
+		image: '',
+		author: 'J.R.R. Tolkien',
+		read: false
 	}
 ]);
 

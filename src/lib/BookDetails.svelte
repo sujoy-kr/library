@@ -9,6 +9,12 @@
 		book.read = !book.read;
 		$BookStore = copiedList;
 	};
+
+	const handleDeletion = (id) => {
+		let copiedList = $BookStore;
+		let filteredList = copiedList.filter((book) => book.id !== id);
+		$BookStore = filteredList;
+	};
 </script>
 
 <Card
@@ -28,6 +34,7 @@
 					class:read={book.read}>{book.read ? 'Reading Done' : 'Not Read Yet'}</button
 				>
 				<button
+					on:click={() => handleDeletion(book.id)}
 					class="bg-red-500 rounded-sm py-2 px-4 mt-4 text-md text-white font-semibold tracking-wide"
 					>Delete</button
 				>

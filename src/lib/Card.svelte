@@ -1,4 +1,9 @@
-<div class="card p-4 m-4 rounded-md bg-white">
+<script>
+	import { fade } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
+</script>
+
+<div out:fade class="card p-4 m-4 rounded-md bg-white">
 	<slot />
 </div>
 
