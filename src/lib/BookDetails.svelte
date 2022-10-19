@@ -20,9 +20,9 @@
 <Card
 	><figure class="w-64 text-center">
 		<img
-			src={book.cover ? book.cover : './default-book-cover.jpg'}
-			class="w-ful rounded-md"
-			alt={book.title}
+			src={book.image}
+			class="w-ful h-96 rounded-md"
+			alt={book.iamge ? book.title : 'Default Book Cover'}
 		/>
 		<figcaption>
 			<h2 class="text-2xl font-semibold mt-4">{book.title}</h2>

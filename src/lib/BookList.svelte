@@ -1,14 +1,14 @@
 <script>
 	import BookStore from '../stores/BookStore';
 	import BookDetails from '$lib/BookDetails.svelte';
-	import { scale, fade } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
 </script>
 
-<ul class="flex container my-4 mx-auto flex-wrap justify-evenly">
-	{#each $BookStore as book (book.id)}
-		<div in:fade out:scale|local animate:flip={{ duration: 500 }}>
+<ul class="flex container p-4 mb-4 mt-8 mx-auto flex-wrap justify-center">
+	{#if $BookStore.length !== 0}
+		{#each $BookStore as book (book.id)}
 			<BookDetails {book} />
-		</div>
-	{/each}
+		{/each}
+	{:else}
+		<h1 class="text-3xl m-4 text-center font-bold text-slate-500 uppercase">No Books Found</h1>
+	{/if}
 </ul>

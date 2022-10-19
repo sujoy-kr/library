@@ -5,6 +5,9 @@
 	import '../global.css';
 </script>
 
+<svelte:head>
+	<title>Library</title>
+</svelte:head>
 <Header />
 <slot />
 <Footer />

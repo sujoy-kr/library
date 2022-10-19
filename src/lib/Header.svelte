@@ -1,3 +1,3 @@
-<header class="bg-slate-500">
+<header class="bg-slate-500 mb-8">
 	<h1 class="text-5xl text-center p-4 pt-6 font-bold text-white uppercase">Library</h1>
 </header>

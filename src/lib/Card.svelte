@@ -1,9 +1,9 @@
 <script>
-	import { fade } from 'svelte/transition';
-	import { fly } from 'svelte/transition';
+	import { scale, fade } from 'svelte/transition';
+	import { flip } from 'svelte/animate';
 </script>
 
-<div out:fade class="card p-4 m-4 rounded-md bg-white">
+<div key={Math.random} in:fade out:scale|local class="card p-4 m-4 rounded-md bg-white">
 	<slot />
 </div>
 
